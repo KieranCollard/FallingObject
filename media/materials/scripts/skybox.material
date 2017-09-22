@@ -1,0 +1,620 @@
+material SkyBox/canyon02
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture canyon02.jpg separateUV
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material SkyBox/cloudy_afternoon
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture cloudy_afternoon.jpg separateUV
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material SkyBox/cloudy_noon
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture cloudy_noon.jpg separateUV
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material SkyBox/dawn
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+            cubic_texture dawn.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+material SkyBox/desert07
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+            cubic_texture desert07.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+material SkyBox/early_morning
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+			//filtering none
+            cubic_texture early_morning_FR.jpg early_morning_BK.jpg early_morning_LF.jpg early_morning_RT.jpg early_morning_UP.jpg early_morning_DN.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+material SkyBox/evening
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+            cubic_texture evening.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+material SkyBox/fullmoon
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+            cubic_texture fullmoon.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+material SkyBox/morning
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+            cubic_texture morning.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+material SkyBox/overcast
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+            cubic_texture overcast.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+material SkyBox/stormy
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+            cubic_texture stormy.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+material SkyBox/underwater01
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+            cubic_texture underwater01.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+material SkyBox/urban_sky
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+            cubic_texture urban_sky.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+material SkyBox/winterday02
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+            cubic_texture winterday02.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+material SkyBox/waterworld09
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         depth_write off
+         
+         texture_unit
+         {
+            cubic_texture waterworld09.jpg separateUV
+            tex_address_mode clamp
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+material SkyBoxEnv/canyon02
+{
+	technique
+	{
+		pass
+		{
+		   lighting off
+			texture_unit
+			{
+				cubic_texture canyon02.jpg combinedUVW
+				tex_address_mode clamp
+				env_map cubic_reflection
+			}
+		}
+	}
+}
+
+material SkyBoxEnv/cloudy_afternoon
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			texture_unit
+			{
+				cubic_texture cloudy_afternoon.jpg combinedUVW
+				tex_address_mode clamp
+				env_map cubic_reflection
+			}
+		}
+	}
+}
+
+material SkyBoxEnv/cloudy_noon
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			texture_unit
+			{
+				cubic_texture cloudy_noon.jpg combinedUVW
+				tex_address_mode clamp
+				env_map cubic_reflection
+			}
+		}
+	}
+}
+
+material SkyBoxEnv/dawn
+{
+   technique
+   {
+      pass
+      {
+			lighting off
+         texture_unit
+         {
+            cubic_texture dawn.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBoxEnv/desert07
+{
+   technique
+   {
+      pass
+      {
+			lighting off
+         texture_unit
+         {
+            cubic_texture desert07.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBoxEnv/early_morning
+{
+   technique
+   {
+      pass
+      {
+			lighting off
+         texture_unit
+         {
+            cubic_texture early_morning.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBoxEnv/evening
+{
+   technique
+   {
+      pass
+      {
+			lighting off
+         texture_unit
+         {
+            cubic_texture evening.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBoxEnv/fullmoon
+{
+   technique
+   {
+      pass
+      {
+			lighting off
+         texture_unit
+         {
+            cubic_texture fullmoon.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBoxEnv/morning
+{
+   technique
+   {
+      pass
+      {
+         lighting off
+         texture_unit
+         {
+            cubic_texture morning.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBoxEnv/overcast
+{
+   technique
+   {
+      pass
+      {
+			lighting off
+         texture_unit
+         {
+            cubic_texture overcast.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBoxEnv/stormy
+{
+   technique
+   {
+      pass
+      {
+			lighting off
+         texture_unit
+         {
+            cubic_texture stormy.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBoxEnv/underwater01
+{
+   technique
+   {
+      pass
+      {
+			lighting off
+         texture_unit
+         {
+            cubic_texture underwater01.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBoxEnv/urban_sky
+{
+   technique
+   {
+      pass
+      {
+			lighting off
+         texture_unit
+         {
+            cubic_texture urban_sky.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBoxEnv/winterday02
+{
+   technique
+   {
+      pass
+      {
+			lighting off
+         texture_unit
+         {
+            cubic_texture winterday02.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBoxEnv/waterworld09
+{
+   technique
+   {
+      pass
+      {
+			lighting off
+         texture_unit
+         {
+            cubic_texture waterworld09.jpg combinedUVW
+            tex_address_mode clamp
+            env_map cubic_reflection
+         }
+      }
+   }
+}
+
+material SkyBox/sky1
+{
+   technique
+   {
+      pass
+      {
+		 lighting off
+         texture_unit
+         {
+            cubic_texture sky1.dds combinedUVW
+         }
+      }
+   }
+}
+
+material SkyBox/sky2
+{
+   technique
+   {
+      pass
+      {
+		 lighting off
+         texture_unit
+         {
+            cubic_texture sky2.dds combinedUVW
+         }
+      }
+   }
+}
+
+material SkyBox/sky2filter
+{
+   technique
+   {
+      pass
+      {
+		 lighting off
+         texture_unit
+         {
+            cubic_texture sky2_filter.dds combinedUVW
+         }
+      }
+   }
+}
+
+material SkyBox/sky3
+{
+   technique
+   {
+      pass
+      {
+		 lighting off
+         texture_unit
+         {
+            cubic_texture sky3.dds combinedUVW
+         }
+      }
+   }
+}
+
+material SkyBox/sky4
+{
+   technique
+   {
+      pass
+      {
+		 lighting off
+         texture_unit
+         {
+            cubic_texture sky4.dds combinedUVW
+         }
+      }
+   }
+}

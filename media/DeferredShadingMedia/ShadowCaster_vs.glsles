@@ -1,0 +1,46 @@
+#version 100
+
+precision highp float;
+precision highp int;
+precision lowp sampler2D;
+precision lowp samplerCube;
+
+uniform mat4 cWorldViewProj;
+uniform mat4 cWorldView;
+
+void main(
+    float4 iPosition : POSITION,
+        
+    out float4 oPosition : POSITION,
+    out float3 oViewPos : TEXCOORD0,
+       
+    uniform float4x4 cWorldViewProj,
+    uniform float4x4 cWorldView
+    )
+{
+    oPosition = cWorldViewProj * iPosition;
+    oViewPos = (cWorldView * iPosition).xyz;
+}
+#version 100
+
+precision highp float;
+precision highp int;
+precision lowp sampler2D;
+precision lowp samplerCube;
+
+uniform mat4 cWorldViewProj;
+uniform mat4 cWorldView;
+
+void main(
+    float4 iPosition : POSITION,
+        
+    out float4 oPosition : POSITION,
+    out float3 oViewPos : TEXCOORD0,
+       
+    uniform float4x4 cWorldViewProj,
+    uniform float4x4 cWorldView
+    )
+{
+    oPosition = cWorldViewProj * iPosition;
+    oViewPos = (cWorldView * iPosition).xyz;
+}

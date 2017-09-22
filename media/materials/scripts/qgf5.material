@@ -1,0 +1,191 @@
+material qgf5/grid
+{
+	technique
+	{
+		pass
+		{
+			diffuse vertexcolour
+			specular 0 0 0 0
+			ambient 1 1 1
+			//lighting off
+			texture_unit
+			{
+				filtering anisotropic
+				max_anisotropy 16
+				//texture grass_1024.jpg
+				texture grid.png
+				//texture ennis.exr
+			}
+		}
+	}
+}
+
+material qgf5/grid_
+{
+	technique
+	{
+		pass
+		{
+		lighting off
+		scene_blend alpha_blend
+			texture_unit
+			{
+				colour_op_ex modulate src_manual src_current 1 1 0
+				alpha_op_ex source1 src_manual src_current 0.5
+			}
+		}
+	}
+}
+material qgf5/hdr
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1 1 1 1
+			specular 0 0 0 0
+			ambient 1 1 1
+			texture_unit
+			{
+				filtering anisotropic
+				max_anisotropy 16
+				//texture grid.dds
+				//texture grid.png
+				texture ennis.exr
+			}
+		}
+	}
+}
+material qgf5/droplet
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			point_sprites on
+			point_size_attenuation on
+			point_size 320
+			point_size_max 320.0
+			point_size_min 16
+
+			lighting off
+			alpha_rejection greater_equal 128
+			//scene_blend add
+			texture_unit
+			{
+				//texture RZR-002.png
+				texture droplet2.png
+			//	alpha_op_ex source1 src_manual src_current 0
+			}
+//			texture_unit
+//			{
+				//colour_op_ex dotproduct src_texture src_manual 0 0 0 
+//				colour_op_ex dotproduct src_current src_manual  0 1 0 0
+//				colour_op_ex modulate src_manual src_current 1 0 0 0 0
+				
+//			}
+		}
+	}
+}
+
+material testtrans
+{
+	technique
+	{
+		pass
+		{
+			colour_write off
+			scene_blend alpha_blend
+			
+
+		}
+		pass
+		{
+			//depth_func less
+			//colour_write on
+			scene_blend alpha_blend
+			depth_write off
+			diffuse 1 0 0 0.5
+			ambient 1 0 0 0.5
+		}
+	}
+}
+
+material killbots/walls
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				filtering none
+				texture mineterrain.png
+			}
+		}
+	}
+}
+
+
+material Examples/OgreLogo
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.8 0.8 0.8
+
+			texture_unit
+			{
+				texture ogrelogo.png
+			}
+		}
+	}
+}
+
+material qgf5/red
+{
+	technique
+	{
+		pass
+		{
+
+			lighting off
+			texture_unit
+			{
+				colour_op_ex source1 src_manual src_current 1 0 0
+			}
+		}
+	}
+}
+material qgf5/green
+{
+	technique
+	{
+		pass
+		{
+
+			lighting off
+			texture_unit
+			{
+				colour_op_ex source1 src_manual src_current 0 1 0
+			}
+		}
+	}
+}
+material qgf5/blue
+{
+	technique
+	{
+		pass
+		{
+
+			lighting off
+			texture_unit
+			{
+				colour_op_ex source1 src_manual src_current 0 0 1
+			}
+		}
+	}
+}

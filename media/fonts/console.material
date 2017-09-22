@@ -1,0 +1,16 @@
+material console/background
+{
+   technique
+   {
+      pass
+      {
+         scene_blend alpha_blend
+			diffuse 1 1 1 1
+			texture_unit
+			{
+			texture marbles.ras
+			}
+      }
+   }
+}
+
